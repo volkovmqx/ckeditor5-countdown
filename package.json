@@ -1,0 +1,50 @@
+{
+  "name": "ckeditor5-countdown",
+  "version": "0.0.1",
+  "description": "Countdown plugin for CKEditor5",
+  "main": "src/countdown.js",
+  "dependencies": {
+    "@ckeditor/ckeditor5-core": "^20.0.0",
+    "@ckeditor/ckeditor5-widget": "^20.0.0",
+    "@ckeditor/ckeditor5-ui": "^20.0.0",
+    "@ckeditor/ckeditor5-utils": "^20.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^20.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-ckeditor5": "^1.0.7",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=6.9.0",
+    "yarn": ">=1.12.0"
+  },
+  "author": "volkovmqx",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/volkovmqx/ckeditor5-countdown",
+  "bugs": "https://github.com/volkovmqx/ckeditor5-countdown/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/volkovmqx/ckeditor5-countdown.git"
+  },
+  "files": [
+    "src",
+    "theme"
+  ],
+  "scripts": {
+    "lint": "eslint --quiet 'src/*.js'",
+    "lintfix": "eslint --fix --quiet 'src/*.js'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --quiet"
+    ]
+  },
+  "eslintIgnore": [
+    "src/lib/**",
+    "packages/**"
+  ]
+}
