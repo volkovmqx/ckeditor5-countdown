@@ -1,14 +1,14 @@
 {
   "name": "ckeditor5-countdown",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Countdown plugin for CKEditor5",
   "main": "src/countdown.js",
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "^20.0.0",
-    "@ckeditor/ckeditor5-widget": "^20.0.0",
-    "@ckeditor/ckeditor5-ui": "^20.0.0",
-    "@ckeditor/ckeditor5-utils": "^20.0.0",
-    "@ckeditor/ckeditor5-media-embed": "^20.0.0"
+    "@ckeditor/ckeditor5-core": "^18.0.0",
+    "@ckeditor/ckeditor5-widget": "^18.0.0",
+    "@ckeditor/ckeditor5-ui": "^18.0.0",
+    "@ckeditor/ckeditor5-utils": "^18.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^18.0.0"
   },
   "devDependencies": {
     "eslint": "^7.3.1",
