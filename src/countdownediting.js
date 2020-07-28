@@ -10,7 +10,6 @@ import Widget from '@ckeditor/ckeditor5-widget/src/widget';
 import CountdownCommand from './countdowncommand';
 
 import '../theme/countdown.css';
-import 'pickerjs/dist/picker.css';
 
 export default class CountdownEditing extends Plugin {
 	static get requires() {

@@ -3,9 +3,8 @@ import ViewCollection from '@ckeditor/ckeditor5-ui/src/viewcollection';
 
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 
-import LabeledFieldView from '@ckeditor/ckeditor5-ui/src/labeledfield/labeledfieldview';
-import { createLabeledInputDateTime } from './utils/utils';
-
+import LabeledInputView from '@ckeditor/ckeditor5-ui/src/labeledinput/labeledinputview';
+import DateTimeInputView from './datetimeinput';
 import submitHandler from '@ckeditor/ckeditor5-ui/src/bindings/submithandler';
 import FocusTracker from '@ckeditor/ckeditor5-utils/src/focustracker';
 import FocusCycler from '@ckeditor/ckeditor5-ui/src/focuscycler';
@@ -51,7 +50,7 @@ export default class DatepickerView extends View {
 		/**
 		 * The DateTime input view.
 		 *
-		 * @member {module:ui/labeledfield/labeledfieldview~LabeledFieldView}
+		 * @member {module:ui/labeledfield/labeledinputview~LabeledInputView}
 		 */
 		this.dateTimeInputView = this._createDateTimeInput();
 
@@ -189,7 +188,7 @@ export default class DatepickerView extends View {
 	 * @type {Number}
 	 */
 	get dateTime() {
-		return this.dateTimeInputView.fieldView.element.value.trim();
+		return this.dateTimeInputView.inputView.element.value.trim();
 	}
 
 	/**
@@ -201,7 +200,7 @@ export default class DatepickerView extends View {
 	 * @param {String} dateTime
 	 */
 	set dateTime( dateTime ) {
-		this.dateTimeInputView.fieldView.element.value = dateTime.trim();
+		this.dateTimeInputView.inputView.element.value = dateTime.trim();
 	}
 
 	/**
@@ -241,10 +240,10 @@ export default class DatepickerView extends View {
 	 * Creates a labeled input view.
 	 *
 	 * @private
-	 * @returns {module:ui/labeledfield/labeledfieldview~LabeledFieldView} Labeled input view instance.
+	 * @returns {module:ui/labeledfield/labeledinputview~LabeledInputView} Labeled input view instance.
 	 */
 	_createDateTimeInput() {
-		const labeledInput = new LabeledFieldView( this.locale, createLabeledInputDateTime );
+		const labeledInput = new LabeledInputView( this.locale, DateTimeInputView );
 		return labeledInput;
 	}
 

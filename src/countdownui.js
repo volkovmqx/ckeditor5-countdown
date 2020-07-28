@@ -40,12 +40,12 @@ export default class CountdownUI extends Plugin {
 		// invisible form/input cannot be focused/selected.
 		button.on( 'open', () => {
 			// Make sure that each time the panel shows up, the URL field remains in sync with the value of
-			// the command. If the user typed in the input, then canceled (`dateTimeInputView#fieldView#value` stays
+			// the command. If the user typed in the input, then canceled (`dateTimeInputView#inputView#value` stays
 			// unaltered) and re-opened it without changing the value of the media command (e.g. because they
 			// didn't change the selection), they would see the old value instead of the actual value of the
 			// command.
 			datepicker.dateTime = command.value || '';
-			datepicker.dateTimeInputView.fieldView.select();
+			datepicker.dateTimeInputView.inputView.select();
 			datepicker.focus();
 		}, {
 			priority: 'low'
