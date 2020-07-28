@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-countdown",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Countdown plugin for CKEditor5",
   "main": "src/countdown.js",
   "dependencies": {
