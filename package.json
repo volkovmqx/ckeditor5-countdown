@@ -8,7 +8,7 @@
     "@ckeditor/ckeditor5-widget": "^27.0.0",
     "@ckeditor/ckeditor5-ui": "^18.0.0",
     "@ckeditor/ckeditor5-utils": "^18.0.0",
-    "@ckeditor/ckeditor5-media-embed": "^18.0.0"
+    "@ckeditor/ckeditor5-media-embed": "^27.0.0"
   },
   "devDependencies": {
     "eslint": "^7.3.1",
