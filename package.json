@@ -5,10 +5,10 @@
   "main": "src/countdown.js",
   "dependencies": {
     "@ckeditor/ckeditor5-core": "^18.0.0",
-    "@ckeditor/ckeditor5-widget": "^27.0.0",
+    "@ckeditor/ckeditor5-widget": "^36.0.1",
     "@ckeditor/ckeditor5-ui": "^18.0.0",
     "@ckeditor/ckeditor5-utils": "^18.0.0",
-    "@ckeditor/ckeditor5-media-embed": "^27.0.0"
+    "@ckeditor/ckeditor5-media-embed": "^36.0.1"
   },
   "devDependencies": {
     "eslint": "^7.3.1",
